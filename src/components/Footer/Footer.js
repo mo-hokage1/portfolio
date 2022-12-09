@@ -23,7 +23,7 @@ function Footer() {
   return (
     <FooterSection>
       <div className="Container">
-        <span>Mohamed Said Abdulkadir</span>
+        <span>Mohamed Said Abdulqadir</span>
       </div>
     </FooterSection>
   );
