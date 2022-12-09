@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaBook, FaBookOpen, FaGithub, FaHandPaper } from "react-icons/fa";
 import { ProjectList } from "../../../data/ProjectData";
 import {
   Card,
@@ -40,6 +40,19 @@ function ProjectCard() {
               >
                 Visit Website ➜
               </a>
+              {list.title === "2. Snap Share Consult" && (
+                <a
+                  className="btn PrimaryBtn"
+                  style={{ marginLeft: "1rem" }}
+                  href={
+                    "https://drive.google.com/file/d/1DUWmXPXNOgVwOLE6rhkF9AnGSLfhOCqU/view?usp=share_link"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Dissertation <FaBookOpen />
+                </a>
+              )}
             </BtnGroup>
           </CardRight>
         </Card>

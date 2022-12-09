@@ -9,6 +9,7 @@ import {
   Image,
   ScrollDown,
   ScrollLink,
+  Span,
 } from "./HeroElements";
 function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,32 +27,32 @@ function Hero() {
             <h1>
               Hi, I'm{" "}
               <span className="name" style={{ fontWeight: "900" }}>
-                Mohamed Said
+                Mohamed Abdulqadir
               </span>{" "}
             </h1>
             <h5 className="frontend">Frontend Developer</h5>
             <p style={{ color: "white" }}>
               I am a{" "}
-              <span style={{ color: "salmon", fontWeight: "900" }}>
+              <Span className="bold" style={{ fontWeight: "900" }}>
                 Software Engineer
-              </span>{" "}
+              </Span>{" "}
               specializing in{" "}
-              <span style={{ color: "salmon", fontWeight: "900" }}>
+              <Span className="bold" style={{ fontWeight: "900" }}>
                 Front-End Development
-              </span>{" "}
+              </Span>{" "}
               and love what I do.
             </p>
           </HeroLeft>
           <HeroRight>
             <Image
-              src="https://www.svgrepo.com/show/37594/man.svg"
+              src="https://cdn-icons-png.flaticon.com/512/2409/2409387.png"
               alt="man-svgrepo"
             />
           </HeroRight>
         </HeroWrapper>
         <ScrollDown to="projects">
           <ScrollLink>
-            Scroll down
+            Check out my work
             <img
               src="https://raw.githubusercontent.com/gurupawar/website/main/src/Assets/scroll-down.svg"
               alt="scroll-down"

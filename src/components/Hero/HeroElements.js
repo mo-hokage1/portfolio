@@ -35,6 +35,13 @@ export const HeroWrapper = styled.div`
   }
 `;
 
+export const Span = styled.span`
+  @supports (-webkit-text-stroke: 1px black) {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: #74b8f5;
+  }
+`;
+
 export const HeroLeft = styled.div`
   display: flex;
   flex-direction: column;
@@ -43,6 +50,14 @@ export const HeroLeft = styled.div`
   text-align: left;
   flex: 1;
 
+  .bold {
+    @supports (-webkit-text-stroke: 1px white) {
+      h1 {
+        -webkit-text-stroke: 1px white;
+        -webkit-text-fill-color: salmon;
+      }
+    }
+  }
   h1 {
     font-size: 2.8rem;
     color: #f6f6f6;
@@ -64,6 +79,11 @@ export const HeroLeft = styled.div`
   }
 
   @media screen and (max-width: 992px) {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
     text-align: center;
     align-items: center;
     margin-bottom: 2rem;
@@ -81,6 +101,11 @@ export const Image = styled.img`
   width: auto;
   @media screen and (max-width: 992px) {
     height: 100px;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
   }
 `;
 

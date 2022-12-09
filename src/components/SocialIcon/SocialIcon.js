@@ -37,11 +37,11 @@ function SocialIcon() {
       <ul>
         <li className="item">
           <a
-            href="https://www.linkedin.com/in/mohamed-abdulkadir-b69552245/"
+            href="https://www.linkedin.com/in/mohamed-abdulqadir-b69552245/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin />
+            <FaLinkedin style={{ color: "#fff" }} />
           </a>
         </li>
         <li className="item">
@@ -50,7 +50,7 @@ function SocialIcon() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub />
+            <FaGithub style={{ color: "#fff" }} />
           </a>
         </li>
         <li className="item">
@@ -59,7 +59,7 @@ function SocialIcon() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaEnvelope />
+            <FaEnvelope style={{ color: "#fff" }} />
           </a>
         </li>
       </ul>
