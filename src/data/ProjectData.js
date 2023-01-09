@@ -74,6 +74,10 @@ export const stackList = [
     name: "ReactJS",
   },
   {
+    img: "https://www.svgrepo.com/show/349540/typescript.svg",
+    name: "Typescript",
+  },
+  {
     img: "https://www.svgrepo.com/show/303658/nodejs-1-logo.svg",
     name: "Node JS",
   },
